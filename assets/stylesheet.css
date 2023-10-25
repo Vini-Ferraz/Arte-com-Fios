@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Playfair+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F8F8F8;
+}
+:root{
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-paragrafo: 'Jost', sans-serif;
+    --fonte-titulo-grande-telas-g: 50px;
+    --fonte-titulo-medio-telas-g: 25px;
+    --fonte-paragrafo-grande-telas-g: 30px;
+    --fonte-paragrafo-medio-telas-g: 20px;
+    --fonte-titulo-grande-telas-m-p: 30px;
+    --fonte-titulo-medio-telas-m-p: 20px;
+    --fonte-paragrafo-grande-telas-m-p: 20px;
+    --fonte-paragrafo-medio-telas-m-p: 16px;
+    --cor-texto-preto: #1A1A1A;
+    --cor-texto-branco: #FFFFFF;
+    --cor-degrade-frio-1: #FFC1C1;
+    --cor-degrade-frio-2: #CDB5D7;
+    --cor-degrade-quente-1: #FF656B;
+    --cor-degrade-quente-2: #F2B142;
+}
+
+.titulo{
+    font-family: var(--fonte-titulo);
+}
+.paragrafo{
+    font-family: var(--fonte-paragrafo);
+}
+.preto{
+    color: var(--cor-texto-preto);
+}
+.branco{
+    color: var(--cor-texto-branco);
+}
+
+#foto-mulher-hero-row, #btn-hero-row, #localização{
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.50);
+}
+#foto-mulher-hero-row{
+    border-radius: 500px 500px 0px 0px;
+}
+#btn-hero-row{
+    background: linear-gradient(90deg, var(--cor-degrade-quente-1) 0%, var(--cor-degrade-quente-2) 100%);
+    border: none;
+    border-radius: 1vw;
+}
+
+.sublinhado{
+    text-decoration: underline solid var(--cor-degrade-quente-1);
+}
