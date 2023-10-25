@@ -49,9 +49,54 @@ body{
 #btn-hero-row{
     background: linear-gradient(90deg, var(--cor-degrade-quente-1) 0%, var(--cor-degrade-quente-2) 100%);
     border: none;
-    border-radius: 1vw;
+    border-radius: 5vw;
+}
+
+.caixa-fundo-depoimento{
+    border-radius: 300px;
+    background: linear-gradient(180deg, var(--cor-degrade-frio-1) 0%, var(--cor-degrade-frio-2) 100%);
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
 .sublinhado{
     text-decoration: underline solid var(--cor-degrade-quente-1);
+}
+
+@media (max-width: 500px) {
+    .margem-lateral{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .espaçamento-cima-baixo{
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+    .espaçamento-baixo{
+        padding-bottom: 12%;
+    }
+    .espaçamento-baixo-texto{
+        margin-bottom: 10%;
+    }
+    .caixa-espaçamento{
+        padding: 7%;
+    }
+    .centro{
+        text-align: center;
+    }
+    .titulo-g{
+        font-size: var(--fonte-titulo-grande-telas-m-p);
+    }
+    .titulo-m{
+        font-size: var(--fonte-titulo-medio-telas-m-p);
+    }
+    .paragrafo-g{
+        font-size: var(--fonte-paragrafo-grande-telas-m-p);
+    }
+    .paragrafo-m{
+        font-size: var(--fonte-paragrafo-medio-telas-m-p);
+    }
+
+    #foto-mulher-hero-row{
+        width: 100%;
+    }
 }
