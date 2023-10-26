@@ -58,7 +58,7 @@ body{
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 677px) {
     .margem-lateral{
         margin-left: 10%;
         margin-right: 10%;
@@ -147,7 +147,7 @@ body{
         width: 100%;
     }
 }
-@media (min-width: 501px){
+@media (min-width: 678px){
         .margem-lateral{
             margin-left: 7%;
             margin-right: 7%;
@@ -157,10 +157,10 @@ body{
             padding-bottom: 7%;
         }
         .espaçamento-cima{
-            padding-top: 12%;
+            padding-top: 10%;
         }
         .espaçamento-baixo{
-            padding-bottom: 12%;
+            padding-bottom: 10%;
         }
         .espaçamento-baixo-texto{
             margin-bottom: 6%;
@@ -207,10 +207,16 @@ body{
         #btn-hero-row{
             width: 95%;
         }
+        #titulo-terceira-seção{
+            margin-right: 5vw;
+        }
+        #quarta-seção-caixa-texto{
+            width: 60vw;
+            margin-right: 2vw;
+            text-align: justify;
+        }
         #caixa-icones-redes-socias{
-            width: 100%;
-            margin: 0;
-            padding: 0;
+            width: 40vw;
         }
         .icone-rede-social{
             width: 35px;
@@ -220,23 +226,134 @@ body{
         #hero-row{
             background-image: url('fundo-hero-row-telas-m.svg');
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
         footer{
-            background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
+            background: url('./footer-fundo-telas-m.svg');
+            background-size: cover;
+        }
+        footer > h1 {
+            margin-top: 5vw;
         }
         
         .caixa-beneficios{
-            width: 65vw;
+            padding: 0 2vw;
         }
         .sublinhado{
             text-decoration: 5px underline solid var(--cor-degrade-quente-1);
         }
         #localização{
             width: 100%;
+            height: 500px;
             overflow: hidden;
         }
         iframe {
             width: 100%;
+            height: 500px;
         }
+}
+@media (min-width: 866px){
+    .margem-lateral{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .espaçamento-cima-baixo{
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .espaçamento-cima{
+        padding-top: 10%;
+    }
+    .espaçamento-baixo{
+        padding-bottom: 10%;
+    }
+    .espaçamento-baixo-texto{
+        margin-bottom: 6%;
+    }
+    .caixa-espaçamento{
+        padding: 3% 8%;
+    }
+    .centro{
+        text-align: center;
+    }
+    .titulo-g{
+        font-size: var(--fonte-titulo-grande-telas-g);
+    }
+    .titulo-m{
+        font-size: var(--fonte-titulo-medio-telas-g);
+    }
+    .paragrafo-g{
+        font-size: var(--fonte-paragrafo-grande-telas-g);
+    }
+    .paragrafo-m{
+        font-size: var(--fonte-paragrafo-medio-telas-g);
+    }
+
+    #hero-row, #caixa-beneficios-flex, #terceira-seção-flex, #quarta-seção-flex, #caixa-icones-redes-socias{
+        display: flex;
+    }
+    #hero-row, #terceira-seção-flex, #quarta-seção-flex{
+        align-items: center;
+    }
+    #caixa-icones-redes-socias, #hero-row{
+        justify-content: space-evenly;
+    }
+
+    #caixa-texto-hero-row{
+        width: 45vw;
+        margin-left: 0 2vw;
+    }
+
+    #foto-mulher-hero-row{
+        width: 45vw;
+        max-width: 350px;
+        margin-right: 0 2vw;
+    }
+    #btn-hero-row{
+        width: 95%;
+    }
+    #titulo-terceira-seção{
+        margin-right: 5vw;
+    }
+    #quarta-seção-caixa-texto{
+        width: 60vw;
+        margin-right: 2vw;
+        text-align: justify;
+    }
+    #caixa-icones-redes-socias{
+        width: 40vw;
+    }
+    .icone-rede-social{
+        width: 35px;
+        height: 35px;
+    }
+    
+    #hero-row{
+        background-image: url('fundo-hero-row-telas-m.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer{
+        background: url('./footer-fundo-telas-m.svg');
+        background-size: cover;
+    }
+    footer > h1 {
+        margin-top: 5vw;
+    }
+    
+    .caixa-beneficios{
+        padding: 0 2vw;
+    }
+    .sublinhado{
+        text-decoration: 5px underline solid var(--cor-degrade-quente-1);
+    }
+    #localização{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
 }
