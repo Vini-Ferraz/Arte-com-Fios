@@ -74,7 +74,7 @@ body{
         padding-bottom: 12%;
     }
     .espaçamento-baixo-texto{
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
     .caixa-espaçamento{
         padding: 5% 8%;
@@ -95,13 +95,13 @@ body{
         font-size: var(--fonte-paragrafo-medio-telas-m-p);
     }
 
-    #hero-row, #segunda-seção, #terceira-seção, #caixa-icones-redes-socias{
+    #hero-row, #segunda-seção, #quarta-seção, #caixa-icones-redes-socias{
         display: flex;
     }
-    #segunda-seção, #terceira-seção{
+    #segunda-seção, #quarta-seção{
         flex-direction: column;
     }
-    #segunda-seção, #terceira-seção, #caixa-icones-redes-socias{
+    #segunda-seção, #quarta-seção, #caixa-icones-redes-socias{
         align-items: center;
     }
     #caixa-icones-redes-socias{
@@ -117,14 +117,21 @@ body{
     #caixa-icones-redes-socias{
         width: 100%;
     }
+    #btn-hero-row{
+        width: 80%;
+    }
     .icone-rede-social{
         width: 35px;
         height: 35px;
     }
-
+    
     #hero-row, footer{
         background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
     }
+    #titulo-hero-row, #paragrafo-hero-row, #btn-hero-row, #caixa-img-hero-row{
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
     
     .caixa-beneficios{
         width: 65vw;
@@ -146,8 +153,8 @@ body{
             margin-right: 7%;
         }
         .espaçamento-cima-baixo{
-            padding-top: 12%;
-            padding-bottom: 12%;
+            padding-top: 7%;
+            padding-bottom: 7%;
         }
         .espaçamento-cima{
             padding-top: 12%;
@@ -156,7 +163,7 @@ body{
             padding-bottom: 12%;
         }
         .espaçamento-baixo-texto{
-            margin-bottom: 5%;
+            margin-bottom: 6%;
         }
         .caixa-espaçamento{
             padding: 3% 8%;
@@ -177,22 +184,45 @@ body{
             font-size: var(--fonte-paragrafo-medio-telas-m-p);
         }
     
-        #hero-row, #caixa-beneficios-flex, #terceira-seção-flex{
+        #hero-row, #caixa-beneficios-flex, #terceira-seção-flex, #quarta-seção-flex, #caixa-icones-redes-socias{
             display: flex;
         }
-    
+        #hero-row, #terceira-seção-flex, #quarta-seção-flex{
+            align-items: center;
+        }
+        #caixa-icones-redes-socias, #hero-row{
+            justify-content: space-evenly;
+        }
+
+        #caixa-texto-hero-row{
+            width: 45vw;
+            margin-left: 0 2vw;
+        }
+
         #foto-mulher-hero-row{
-            width: 100%;
+            width: 45vw;
+            max-width: 350px;
+            margin-right: 0 2vw;
+        }
+        #btn-hero-row{
+            width: 95%;
         }
         #caixa-icones-redes-socias{
             width: 100%;
+            margin: 0;
+            padding: 0;
         }
         .icone-rede-social{
             width: 35px;
             height: 35px;
         }
-    
-        #hero-row, footer{
+        
+        #hero-row{
+            background-image: url('fundo-hero-row-telas-m.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        footer{
             background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
         }
         
