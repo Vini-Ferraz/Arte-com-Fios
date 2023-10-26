@@ -21,8 +21,8 @@ body{
     --fonte-paragrafo-medio-telas-m-p: 16px;
     --cor-texto-preto: #1A1A1A;
     --cor-texto-branco: #FFFFFF;
-    --cor-degrade-frio-1: #FFC1C1;
-    --cor-degrade-frio-2: #CDB5D7;
+    --cor-degrade-frio-1: #FCC0C3;
+    --cor-degrade-frio-2: #8C88FD;
     --cor-degrade-quente-1: #FF656B;
     --cor-degrade-quente-2: #F2B142;
 }
@@ -58,10 +58,6 @@ body{
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
-.sublinhado{
-    text-decoration: underline solid var(--cor-degrade-quente-1);
-}
-
 @media (max-width: 500px) {
     .margem-lateral{
         margin-left: 10%;
@@ -71,6 +67,9 @@ body{
         padding-top: 12%;
         padding-bottom: 12%;
     }
+    .espaçamento-cima{
+        padding-top: 12%;
+    }
     .espaçamento-baixo{
         padding-bottom: 12%;
     }
@@ -78,7 +77,7 @@ body{
         margin-bottom: 10%;
     }
     .caixa-espaçamento{
-        padding: 7%;
+        padding: 5% 10%;
     }
     .centro{
         text-align: center;
@@ -96,7 +95,47 @@ body{
         font-size: var(--fonte-paragrafo-medio-telas-m-p);
     }
 
+    #hero-row, #segunda-seção, #terceira-seção, #caixa-icones-redes-socias{
+        display: flex;
+    }
+    #segunda-seção, #terceira-seção{
+        flex-direction: column;
+    }
+    #segunda-seção, #terceira-seção, #caixa-icones-redes-socias{
+        align-items: center;
+    }
+    #caixa-icones-redes-socias{
+        justify-content: space-evenly;
+    }
+    #hero-row{
+        flex-direction: column-reverse;
+    }
+
     #foto-mulher-hero-row{
+        width: 100%;
+    }
+    #caixa-icones-redes-socias{
+        width: 100%;
+    }
+    .icone-rede-social{
+        width: 35px;
+        height: 35px;
+    }
+
+    #hero-row, footer{
+        background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
+    }
+    .caixa-beneficios{
+        width: 65vw;
+    }
+    .sublinhado{
+        text-decoration: 5px underline solid var(--cor-degrade-quente-1);
+    }
+    #localização{
+        width: 100%;
+        overflow: hidden;
+    }
+    iframe {
         width: 100%;
     }
 }
