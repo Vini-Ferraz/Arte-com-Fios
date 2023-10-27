@@ -1,3 +1,4 @@
+/*Configurações gerais do CSS*/
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Playfair+Display:wght@700&display=swap');
 *{
     margin: 0;
@@ -6,7 +7,7 @@
     text-decoration: none;
 }
 body{
-    background-color: #F8F8F8;
+    background-color: #ebebeb;
 }
 :root{
     --fonte-titulo: 'Playfair Display', serif;
@@ -20,13 +21,12 @@ body{
     --fonte-paragrafo-grande-telas-m-p: 20px;
     --fonte-paragrafo-medio-telas-m-p: 16px;
     --cor-texto-preto: #1A1A1A;
-    --cor-texto-branco: #FFFFFF;
+    --cor-texto-branco: #f3f3f3;
     --cor-degrade-frio-1: #FCC0C3;
     --cor-degrade-frio-2: #8C88FD;
     --cor-degrade-quente-1: #FF656B;
     --cor-degrade-quente-2: #F2B142;
 }
-
 .titulo{
     font-family: var(--fonte-titulo);
 }
@@ -39,7 +39,7 @@ body{
 .branco{
     color: var(--cor-texto-branco);
 }
-
+/*Regras de CSS que vão se aplicar em vários elementos, não importa o tamanho da tela*/
 #foto-mulher-hero-row, #btn-hero-row, #localização{
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.50);
 }
@@ -51,14 +51,14 @@ body{
     border: none;
     border-radius: 5vw;
 }
-
 .caixa-fundo-depoimento{
     border-radius: 300px;
     background: linear-gradient(180deg, var(--cor-degrade-frio-1) 0%, var(--cor-degrade-frio-2) 100%);
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.50);
 }
-
+/*Regras de CSS para telas de celulares*/
 @media (max-width: 677px) {
+    /*Regras de CSS para espaçamento*/
     .margem-lateral{
         margin-left: 10%;
         margin-right: 10%;
@@ -79,8 +79,12 @@ body{
     .caixa-espaçamento{
         padding: 5% 8%;
     }
+    /*Regras de CSS para fontes e posicionamento*/
     .centro{
         text-align: center;
+    }
+    #quarta-seção-paragrafo, #quinta-seção-paragrafo{
+        text-align: justify;
     }
     .titulo-g{
         font-size: var(--fonte-titulo-grande-telas-m-p);
@@ -94,7 +98,7 @@ body{
     .paragrafo-m{
         font-size: var(--fonte-paragrafo-medio-telas-m-p);
     }
-
+    /*Regras de CSS para Flex Box*/
     #hero-row, #segunda-seção, #quarta-seção, #caixa-icones-redes-socias{
         display: flex;
     }
@@ -110,7 +114,7 @@ body{
     #hero-row{
         flex-direction: column-reverse;
     }
-
+    /*Regras de CSS para tamanhos em geral*/
     #foto-mulher-hero-row{
         width: 100%;
     }
@@ -126,7 +130,7 @@ body{
         width: 35px;
         height: 35px;
     }
-    
+    /*Regras de CSS para elementos específicos*/
     #hero-row, footer{
         background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
     }
@@ -134,7 +138,6 @@ body{
         margin-left: 10%;
         margin-right: 10%;
     } 
-    
     .caixa-beneficios{
         width: 65vw;
     }
@@ -149,117 +152,118 @@ body{
         width: 100%;
     }
 }
+/*Regras de CSS para telas de tablets*/
 @media (min-width: 678px){
-        .margem-lateral{
-            margin-left: 7%;
-            margin-right: 7%;
-        }
-        .espaçamento-cima-baixo{
-            padding-top: 7%;
-            padding-bottom: 7%;
-        }
-        .espaçamento-cima{
-            padding-top: 10%;
-        }
-        .espaçamento-baixo{
-            padding-bottom: 10%;
-        }
-        .espaçamento-baixo-texto{
-            margin-bottom: 6%;
-        }
-        .caixa-espaçamento{
-            padding: 3% 8%;
-        }
-        .centro{
-            text-align: center;
-        }
-        .titulo-g{
-            font-size: var(--fonte-titulo-grande-telas-m-p);
-        }
-        .titulo-m{
-            font-size: var(--fonte-titulo-medio-telas-m-p);
-        }
-        .paragrafo-g{
-            font-size: var(--fonte-paragrafo-grande-telas-m-p);
-        }
-        .paragrafo-m{
-            font-size: var(--fonte-paragrafo-medio-telas-m-p);
-        }
-    
-        #hero-row, #caixa-beneficios-flex, #terceira-seção-flex, #quarta-seção-flex, #caixa-icones-redes-socias{
-            display: flex;
-        }
-        #hero-row, #terceira-seção-flex, #quarta-seção-flex{
-            align-items: center;
-        }
-        #caixa-icones-redes-socias, #hero-row{
-            justify-content: space-evenly;
-        }
-
-        #caixa-texto-hero-row{
-            width: 45vw;
-            margin-left: 0 2vw;
-        }
-
-        #foto-mulher-hero-row{
-            width: 45vw;
-            max-width: 350px;
-            margin-right: 0 2vw;
-        }
-        #btn-hero-row{
-            width: 85%;
-            padding: 4% 5%;
-            border-radius: 25px;
-        }
-        
-        #titulo-terceira-seção{
-            margin-right: 5vw;
-        }
-        #quarta-seção-caixa-texto{
-            width: 60vw;
-            margin-right: 2vw;
-            text-align: justify;
-        }
-        #caixa-icones-redes-socias{
-            width: 40vw;
-        }
-        .icone-rede-social{
-            width: 35px;
-            height: 35px;
-        }
-        
-        #hero-row{
-            background-image: url('fundo-hero-row-telas-m.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100dvh;
-        }
-        footer{
-            background: url('./footer-fundo-telas-m.svg');
-            background-size: cover;
-        }
-        footer > h1 {
-            margin-top: 5vw;
-        }
-        
-        .caixa-beneficios{
-            padding: 0 2vw;
-        }
-        .sublinhado{
-            text-decoration: 5px underline solid var(--cor-degrade-quente-1);
-        }
-        #localização{
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-        }
+    /*Regras de CSS para espaçamento*/
+    .margem-lateral{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .espaçamento-cima-baixo{
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .espaçamento-cima{
+        padding-top: 10%;
+    }
+    .espaçamento-baixo{
+        padding-bottom: 10%;
+    }
+    .espaçamento-baixo-texto{
+        margin-bottom: 6%;
+    }
+    .caixa-espaçamento{
+        padding: 3% 8%;
+    }
+    /*Regras de CSS para fontes e posicionamento*/
+    .centro{
+        text-align: center;
+    }
+    .titulo-g{
+        font-size: var(--fonte-titulo-grande-telas-m-p);
+    }
+    .titulo-m{
+        font-size: var(--fonte-titulo-medio-telas-m-p);
+    }
+    .paragrafo-g{
+        font-size: var(--fonte-paragrafo-grande-telas-m-p);
+    }
+    .paragrafo-m{
+        font-size: var(--fonte-paragrafo-medio-telas-m-p);
+    }
+    /*Regras de CSS para Flex Box*/
+    #hero-row, #caixa-beneficios-flex, #terceira-seção-flex, #quarta-seção-flex, #caixa-icones-redes-socias{
+        display: flex;
+    }
+    #hero-row, #terceira-seção-flex, #quarta-seção-flex{
+        align-items: center;
+    }
+    #caixa-icones-redes-socias, #hero-row{
+        justify-content: space-evenly;
+    }
+    /*Regras de CSS para tamanhos em geral*/
+    #caixa-texto-hero-row{
+        width: 45vw;
+        margin-left: 0 2vw;
+    }
+    #foto-mulher-hero-row{
+        width: 45vw;
+        max-width: 350px;
+        margin-right: 0 2vw;
+    }
+    #btn-hero-row{
+        width: 85%;
+        padding: 4% 5%;
+        border-radius: 25px;
+    }
+    #titulo-terceira-seção{
+        margin-right: 5vw;
+    }
+    .caixa-beneficios{
+        padding: 0 2vw;
+    }
+    #quarta-seção-caixa-texto{
+        width: 60vw;
+        margin-right: 2vw;
+        text-align: justify;
+    }
+    #caixa-icones-redes-socias{
+        width: 40vw;
+    }
+    .icone-rede-social{
+        width: 35px;
+        height: 35px;
+    }
+    /*Regras de CSS para elementos específicos*/
+    #hero-row{
+        background-image: url('fundo-hero-row-telas-m.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100dvh;
+    }
+    footer{
+        background: url('./footer-fundo-telas-m.svg');
+        background-size: cover;
+    }
+    footer > h1 {
+        margin-top: 5vw;
+    }
+    .sublinhado{
+        text-decoration: 5px underline solid var(--cor-degrade-quente-1);
+    }
+    #localização{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
 }
-
+/*Regras de CSS para telas de computadores e notebook*/
 @media (min-width: 1000px){
+    /*Regras de CSS para espaçamento*/
     .margem-lateral{
         margin-left: 7%;
         margin-right: 7%;
@@ -280,6 +284,7 @@ body{
     .caixa-espaçamento{
         padding: 8% 10%;
     }
+    /*Regras de CSS para fontes e posicionamento*/
     .centro{
         text-align: center;
     }
@@ -295,7 +300,7 @@ body{
     .paragrafo-m{
         font-size: var(--fonte-paragrafo-medio-telas-g);
     }
-
+    /*Regras de CSS para Flex Box*/
     #hero-row, #caixa-beneficios-flex, #terceira-seção-flex, #quarta-seção-flex, #caixa-icones-redes-socias{
         display: flex;
     }
@@ -305,7 +310,7 @@ body{
     #caixa-icones-redes-socias, #hero-row{
         justify-content: space-evenly;
     }
-
+    /*Regras de CSS para tamanhos em geral*/
     #caixa-texto-hero-row{
         width: 45vw;
         margin-left: 0 2vw;
@@ -314,7 +319,9 @@ body{
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .caixa-beneficios{
+        padding: 0 4vw;
+    }
     #foto-mulher-hero-row{
         width: 36.5vw;
         max-width: 100%;
@@ -340,19 +347,15 @@ body{
         width: 70px;
         height: 70px;
     }
-    
+    /*Regras de CSS para elementos específicos*/
     #hero-row{
-        background-image: url('fundo-hero-row-telas-g-m.svg');
+        background-image: url('fundo-hero-row-telas-g.svg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
     }
     footer{
-        background: url('./fundo-footer-telas-g-m.svg');
+        background: url('./fundo-footer-telas-g.svg');
         background-size: cover;
-    }
-
-    .caixa-beneficios{
-        padding: 0 4vw;
     }
 }
