@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    transition: 350ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 body{
     background-color: #ebebeb;
@@ -50,6 +51,9 @@ body{
     background: linear-gradient(90deg, var(--cor-degrade-quente-1) 0%, var(--cor-degrade-quente-2) 100%);
     border: none;
     border-radius: 5vw;
+}
+#btn-hero-row:hover{
+    transform: scale(1.03);
 }
 .caixa-fundo-depoimento{
     border-radius: 300px;
