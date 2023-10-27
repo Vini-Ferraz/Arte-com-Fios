@@ -119,6 +119,8 @@ body{
     }
     #btn-hero-row{
         width: 80%;
+        padding: 3% 2%;
+        border-radius: 25px;
     }
     .icone-rede-social{
         width: 35px;
@@ -205,8 +207,11 @@ body{
             margin-right: 0 2vw;
         }
         #btn-hero-row{
-            width: 95%;
+            width: 85%;
+            padding: 4% 5%;
+            border-radius: 25px;
         }
+        
         #titulo-terceira-seção{
             margin-right: 5vw;
         }
@@ -226,7 +231,8 @@ body{
         #hero-row{
             background-image: url('fundo-hero-row-telas-m.svg');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
+            height: 100dvh;
         }
         footer{
             background: url('./footer-fundo-telas-m.svg');
@@ -252,7 +258,8 @@ body{
             height: 500px;
         }
 }
-@media (min-width: 866px){
+
+@media (min-width: 1000px){
     .margem-lateral{
         margin-left: 7%;
         margin-right: 7%;
@@ -271,7 +278,7 @@ body{
         margin-bottom: 6%;
     }
     .caixa-espaçamento{
-        padding: 3% 8%;
+        padding: 8% 10%;
     }
     .centro{
         text-align: center;
@@ -303,57 +310,49 @@ body{
         width: 45vw;
         margin-left: 0 2vw;
     }
+    #caixa-beneficios-flex{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
     #foto-mulher-hero-row{
-        width: 45vw;
-        max-width: 350px;
-        margin-right: 0 2vw;
+        width: 36.5vw;
+        max-width: 100%;
     }
     #btn-hero-row{
-        width: 95%;
+        width: 80%;
+        padding: 2% 5%;
+        border-radius: 20px;
+    }
+    .quebrar-texto{
+        display: block;
     }
     #titulo-terceira-seção{
         margin-right: 5vw;
+        text-align: left;
     }
     #quarta-seção-caixa-texto{
         width: 60vw;
         margin-right: 2vw;
         text-align: justify;
     }
-    #caixa-icones-redes-socias{
-        width: 40vw;
-    }
     .icone-rede-social{
-        width: 35px;
-        height: 35px;
+        width: 70px;
+        height: 70px;
     }
     
     #hero-row{
-        background-image: url('fundo-hero-row-telas-m.svg');
+        background-image: url('fundo-hero-row-telas-g-m.svg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        height: 100vh;
     }
     footer{
-        background: url('./footer-fundo-telas-m.svg');
+        background: url('./fundo-footer-telas-g-m.svg');
         background-size: cover;
     }
-    footer > h1 {
-        margin-top: 5vw;
-    }
-    
+
     .caixa-beneficios{
-        padding: 0 2vw;
-    }
-    .sublinhado{
-        text-decoration: 5px underline solid var(--cor-degrade-quente-1);
-    }
-    #localização{
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-    }
-    iframe {
-        width: 100%;
-        height: 500px;
+        padding: 0 4vw;
     }
 }
