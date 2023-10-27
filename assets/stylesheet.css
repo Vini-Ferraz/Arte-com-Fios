@@ -1,5 +1,14 @@
 /*Configurações gerais do CSS*/
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Playfair+Display:wght@700&display=swap');
+@keyframes caixa-aviso {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +68,20 @@ body{
     border-radius: 300px;
     background: linear-gradient(180deg, var(--cor-degrade-frio-1) 0%, var(--cor-degrade-frio-2) 100%);
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.50);
+}
+#aviso{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 75vw;
+    width: 75vw;
+    padding: 5vw;
+    background-color: red;
+    border-radius: 1vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: 0%;
+    animation-name: caixa-aviso;
+    animation-duration: 7s;
 }
 /*Regras de CSS para telas de celulares*/
 @media (max-width: 677px) {
@@ -135,6 +158,11 @@ body{
         height: 35px;
     }
     /*Regras de CSS para elementos específicos*/
+    #aviso{
+        left: 50%;
+        top: 40%;
+        font-size: 5vw;
+    }
     #hero-row, footer{
         background: linear-gradient(90deg, var(--cor-degrade-frio-1) -5.5%, var(--cor-degrade-frio-2) 99.45%);
     }
@@ -239,6 +267,13 @@ body{
         height: 35px;
     }
     /*Regras de CSS para elementos específicos*/
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 50vw;
+        width: 50vw;
+        font-size: 3vw;
+    }
     #hero-row{
         background-image: url('fundo-hero-row-telas-m.svg');
         background-repeat: no-repeat;
@@ -352,6 +387,13 @@ body{
         height: 70px;
     }
     /*Regras de CSS para elementos específicos*/
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 30vw;
+        width: 30vw;
+        font-size: 1.7vw;
+    }
     #hero-row{
         background-image: url('fundo-hero-row-telas-g.svg');
         background-repeat: no-repeat;
