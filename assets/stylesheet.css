@@ -88,8 +88,8 @@ body{
 @media (max-width: 677px) {
     /*Regras de CSS para espaçamento*/
     .margem-lateral{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .espaçamento-cima-baixo{
         padding-top: 12%;
@@ -106,6 +106,9 @@ body{
     }
     .caixa-espaçamento{
         padding: 5% 8%;
+    }
+    #terceira-seção-flex, #quarta-seção {
+        min-height: 100vh;
     }
     /*Regras de CSS para fontes e posicionamento*/
     .centro{
@@ -127,14 +130,17 @@ body{
         font-size: var(--fonte-paragrafo-medio-telas-m-p);
     }
     /*Regras de CSS para Flex Box*/
-    #hero-row, #segunda-seção, #quarta-seção, #caixa-icones-redes-socias{
+    #hero-row, #segunda-seção, #terceira-seção-flex, #quarta-seção, #caixa-icones-redes-socias{
         display: flex;
     }
-    #segunda-seção, #quarta-seção{
+    #segunda-seção, #terceira-seção-flex, #quarta-seção{
         flex-direction: column;
     }
-    #segunda-seção, #quarta-seção, #caixa-icones-redes-socias{
+    #segunda-seção, #terceira-seção-flex, #quarta-seção, #caixa-icones-redes-socias{
         align-items: center;
+    }
+    #terceira-seção-flex, #quarta-seção{
+        justify-content: center;
     }
     #caixa-icones-redes-socias{
         justify-content: space-evenly;
